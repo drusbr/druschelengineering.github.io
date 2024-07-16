@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Add this at the end of your existing CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #082b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #082b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 15px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover, 
+.navbar a.active {
+    color: #00abf0;
+}
+
+.about, .education {
+    padding: 100px 10% 50px 10%; /* Adjust the top padding as needed */
+    background-color: #082b29;
+    color: #ededed;
+}
+    
+.about-content, .education-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-content h1, .education-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-item, .education-item {
+    margin-bottom: 30px;
+}
+
+.about-item h3, .education-item h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.about-item p, .education-item h3, .education-item p {
+    font-size: 16px;
+    color: #ededed;
+    margin-top: 5px;
+}
+
+.about-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.about-sci a:hover {
+    color: #082b29;
+}
+
+.about-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.about-sci a:hover::before {
+    width: 100%;
+}
+
+
+/* Add this at the end of your existing CSS */
+
+.education {
+    padding: 50px 10%;
+    background-color: #082b29;
+    color: #ededed;
+}
+
+.education-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.education-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.education-item {
+    margin-bottom: 30px;
+}
+
+.education-item h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.education-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ededed;
+    margin-top: 10px;
+}
+
+.education-item p {
+    font-size: 16px;
+    color: #ededed;
+    margin-top: 5px;
+}
+
+/* Engineering Projects Styles */
+.projects {
+    padding: 60px 10%;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project {
+    background-color: #0b3d3a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+    padding: 20px;
+    text-align: left;
+}
+
+.project img {
+    width: 100%;
+    max-height: 300px; /* Adjust the max-height as per your design */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.project-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00abf0;
+    color: #082b29;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #008fc4;
+}
